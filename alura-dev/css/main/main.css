@@ -6,8 +6,10 @@
 
 .m_menu {
     grid-area: "menu";
+    padding-right: 20px;
+    font-size: .9rem;
 }
 
-.m_codes {
-    grid-area: "codes"
+.m_code {
+    grid-area: "code"
 }

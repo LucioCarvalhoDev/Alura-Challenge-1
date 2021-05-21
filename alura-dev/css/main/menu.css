@@ -13,7 +13,8 @@
     text-decoration: none;
     margin-bottom: 15px;
     cursor: pointer;
-    background: #112641;
+    /* background: var(--complement-color); */
+    background: linear-gradient(to right, var(--complement-color), var(--primary-color));
     border-radius: 50px;
 }
 

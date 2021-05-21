@@ -1,10 +1,11 @@
 /* 051D3B */
 .h {
-    background: #051D3B;
+    background: var(--primary-color);
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .h_logo, .h_user {
@@ -27,7 +28,7 @@
     height: 100%;
     width: 100%;
     padding: 0 10px;
-    background-color: #303c4b;
+    background-color: var(--complement-color);
     color: #9a9fa7;
     font-size: 1rem;
 }

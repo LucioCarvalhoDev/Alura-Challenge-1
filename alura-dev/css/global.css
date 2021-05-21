@@ -1,10 +1,15 @@
+:root {
+    --primary-color: #051D3B;
+    --complement-color: #ffffff13;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0 15px;
-    background-color: #051D3B;
+    background-color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
     color: #fdfdfd; 
 }
