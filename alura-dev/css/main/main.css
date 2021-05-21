@@ -1,0 +1,13 @@
+.m {
+    display: grid;
+    grid-template-areas: "menu code form";
+    grid-template-columns: 20% 60% 20%;
+}
+
+.m_menu {
+    grid-area: "menu";
+}
+
+.m_codes {
+    grid-area: "codes"
+}

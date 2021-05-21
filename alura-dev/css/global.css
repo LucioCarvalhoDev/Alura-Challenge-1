@@ -1,9 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 15px;
     background-color: #051D3B;
     font-family: 'Roboto', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
+    color: #fdfdfd; 
 }

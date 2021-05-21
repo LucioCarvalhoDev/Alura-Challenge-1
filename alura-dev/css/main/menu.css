@@ -1,0 +1,30 @@
+.m_menu_title {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.m_menu_nav {
+    list-style: none;
+}
+
+.m_menu_nav_item {
+    text-decoration: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background: #112641;
+    border-radius: 50px;
+}
+
+.m_menu_nav_item_icon {
+    padding: 1rem;
+    border-radius: 35%;
+    margin-right: 10px;
+    background-color: rgb(43, 91, 247);
+    filter: brightness(0.5);
+}
+
+.m_menu_nav_item_icon.active {
+    filter: none;
+}
