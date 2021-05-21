@@ -15,12 +15,12 @@
     width: 50%;
 }
 
-.h_nav {
+.h_search {
     height: 55%;
     width: 60%;
 }
 
-.h_nav_navbar {
+.h_search_bar {
     color: #fdfdfd;
     border: none;
     border-radius: 5px;
@@ -32,7 +32,7 @@
     font-size: 1rem;
 }
 
-.h_nav_navbar:focus {
+.h_search_bar:focus {
     outline: none;
 }
 
