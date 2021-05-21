@@ -1,0 +1,55 @@
+/* 051D3B */
+.h {
+    background: #051D3B;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h_logo, .h_user {
+    width: 20%;
+}
+
+.h_logo_alura-dev {
+    width: 50%;
+}
+
+.h_nav {
+    height: 55%;
+    width: 60%;
+}
+
+.h_nav_navbar {
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    background-color: #303c4b;
+    color: #9a9fa7;
+    font-size: 1rem;
+}
+
+.h_nav_navbar:focus {
+    outline: none;
+}
+
+.h_user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.h_user_pic {
+    background: url("./../../assets/images/no-picture.png") #fdfdfd;
+    width: 45px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.h_user_name {
+    color: #fdfdfd;
+}
