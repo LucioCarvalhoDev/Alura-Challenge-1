@@ -7,7 +7,8 @@ const recordKeyPressed = (event) => {
 
 const refocusEditor = () => {
     if (lastKeyPressed != 9) return;
-    textArea.focus()
+    textArea.focus();
+    textArea.value += "  ";
 }
 
 textArea.addEventListener("keydown", recordKeyPressed);
