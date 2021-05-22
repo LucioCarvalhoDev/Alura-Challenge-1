@@ -1,5 +1,4 @@
 .m_code_editor {
-    background: green;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -64,9 +63,11 @@
 
 .m_code_editor_footer {
     background: var(--dark);
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     color: #fdfdfd50;
-    padding: 0px 15px;
+    padding: 5px 15px;
     border-radius: 0 0 10px 10px;
     font-size: 0.8rem;
 }

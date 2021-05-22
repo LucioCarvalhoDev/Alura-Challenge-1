@@ -1,11 +1,14 @@
 :root {
     --primary-color: #051D3B;
+    --secundary-color: #5081FB;
     --complement-color: #ffffff13;
     --dark: #141414;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -13,4 +16,41 @@ body {
     background-color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
     color: #fdfdfd; 
+}
+
+/* special classes */
+
+.mono {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.field {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--complement-color);
+    padding: 5px 10px;
+    color: #fdfdfd;
+}
+
+.field:focus{
+    outline: none;
+}
+
+.red {
+    background-color: #FF000050;
+}
+
+.blue {
+    background-color: #aaaaFF50;
+}
+
+.green {
+    background-color: #00FF0050;
+}
+
+.white {
+    background-color: #fdfdfda0;
 }

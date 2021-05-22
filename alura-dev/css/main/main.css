@@ -1,15 +1,20 @@
 .m {
     display: grid;
-    grid-template-areas: "menu code form";
+    grid-template-areas: "menu code info";
     grid-template-columns: 20% 60% 20%;
 }
 
 .m_menu {
-    grid-area: "menu";
-    padding-right: 20px;
+    grid-area: menu;
+    margin-right: 25px;
     font-size: .9rem;
 }
 
 .m_code {
-    grid-area: "code"
+    grid-area: code
+}
+
+.m_info {
+    grid-area: info;
+    margin-left: 25px;
 }

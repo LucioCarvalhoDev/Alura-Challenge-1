@@ -1,8 +1,5 @@
 .m_menu_title {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    margin-bottom: 15px;
 }
 
 .m_menu_nav {
@@ -22,7 +19,7 @@
     padding: 1rem;
     border-radius: 35%;
     margin-right: 10px;
-    background-color: rgb(43, 91, 247);
+    background-color: var(--secundary-color);
     filter: brightness(0.5);
 }
 
