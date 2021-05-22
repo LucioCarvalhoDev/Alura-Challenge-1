@@ -1,6 +1,7 @@
 :root {
     --primary-color: #051D3B;
     --complement-color: #ffffff13;
+    --dark: #141414;
 }
 
 * {

@@ -17,7 +17,7 @@
 }
 
 .h_search {
-    height: 55%;
+    height: 60%;
     width: 60%;
 }
 
@@ -45,8 +45,8 @@
 }
 
 .h_user_pic {
-    background: url("./../../assets/images/no-picture.png") #fdfdfd;
-    width: 45px;
+    background: url("./../assets/images/no-picture.png") #fdfdfd;
+    width: 35px;
     border-radius: 100%;
     margin-right: 10px;
 }

@@ -52,20 +52,26 @@
             <div class="m_code_editor">
                 <div class="m_code_editor_header">
                     <ul class="m_code_editor_header_dots">
-                        <li class="m_code_editor_header_dots_dot m_code_editor_header_dots_dot"></li>
+                        <li class="m_code_editor_header_dots_dot"></li>
                         <li class="m_code_editor_header_dots_dot m_code_editor_header_dots_dot--yellow"></li>
                         <li class="m_code_editor_header_dots_dot
                         m_code_editor_header_dots_dot--green"></li>
                     </ul>
                     <span class="m_code_editor_header_language">.js</span>
                 </div>
-                <textarea wrap="soft" class="m_code_editor_text" name="" id="" cols="30" rows="10"></textarea>
+                <textarea id="editor-text" wrap="soft" class="m_code_editor_text" name="" id="" cols="30" rows="10"></textarea>
+                <div class="m_code_editor_footer">
+                    <p class="m_code_editor_footer_counter">caracteres: <span id="char-counter"></span></p>
+                </div>
             </div>
             <button class="m_code_highlights">Visualizar com o highlight</button>
         </section>
         <form class="m_info">
         </form>
     </main>
+
+    <script src="./js/charCounter.js"></script>
+    <script src="./js/noTabEscape.js"></script>
 </body>
 
 </html>

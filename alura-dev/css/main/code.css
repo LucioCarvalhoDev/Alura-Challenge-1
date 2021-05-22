@@ -13,7 +13,7 @@
 .m_code_editor_header {
     width: 100%;
     height: 1.7rem;
-    background: #141414;
+    background: var(--dark);
     border-radius: 10px 10px 0 0;
     padding: 5px 15px;
     display: flex;
@@ -56,11 +56,19 @@
     border:none;
     outline: none;
     padding: 5px 15px;
-    border-radius: 0 0 10px 10px;
     border-radius: none;
     resize: none;
     font-size: 1.5rem;
     color: #fdfdfd;
+}
+
+.m_code_editor_footer {
+    background: var(--dark);
+    width: 100%;
+    color: #fdfdfd50;
+    padding: 0px 15px;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.8rem;
 }
 
 .m_code_highlights {
