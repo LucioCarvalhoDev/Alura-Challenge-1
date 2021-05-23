@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     /* background: rgba(255, 0, 0, 0.144); */
-    width: 100%;
+    max-width: 100%;
 }
 
 .m_info_project_legend, .m_info_personalization_legend {
@@ -13,6 +13,7 @@
 }
 
 .m_info_project_name {
+    width: 100%;
     font-size: 1rem;
     height: 3rem;
     margin-bottom: 10px;
@@ -62,4 +63,14 @@
     background: var(--secundary-color);
     color: var(--primary-color);
     cursor: pointer;
+}
+
+.m_info_save:hover, .m_info_save:focus {
+    background-color: #7BA4FC;
+    outline: none;
+}
+
+.m_info_save:active {
+    border: 4px solid var(--tertiary-color);
+    background-color: var(--secundary-color);
 }

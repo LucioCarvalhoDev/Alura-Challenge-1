@@ -1,7 +1,9 @@
 :root {
     --primary-color: #051D3B;
     --secundary-color: #5081FB;
-    --complement-color: #ffffff13;
+    --tertiary-color: #7BA4FC;
+    --complement-color: #ffffff11;
+    --complement-color--hover: #ffffff19;
     --dark: #141414;
 }
 
@@ -9,6 +11,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    min-width: 0px;
 }
 
 body {
@@ -25,6 +28,7 @@ body {
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 4px;
+    font-size: .9rem;
 }
 
 .field {
@@ -37,6 +41,10 @@ body {
 
 .field:focus{
     outline: none;
+}
+
+.field:hover {
+    background-color: var(--complement-color--hover);
 }
 
 .red {
