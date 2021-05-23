@@ -1,16 +1,9 @@
 const textArea = document.getElementById("editor-text");
 let lastKeyPressed;
 
-const recordKeyPressed = (event) => {    
-    lastKeyPressed = event.keyCode;
-}
+const tabStr = "  ";
 
-const tabStr = "  "
-
-const refocusEditor = () => {
-    //Ultima tecla pressionada foi TAB?
-    if (lastKeyPressed != 9) return;
-
+const insertTab = () => {
     const caretPosition = [textArea.selectionStart, textArea.selectionEnd]
 
     textArea.focus();
@@ -25,5 +18,8 @@ const refocusEditor = () => {
     textArea.selectionEnd = caretPosition[1] + tabStr.length;
 }
 
-textArea.addEventListener("keydown", recordKeyPressed);
-textArea.addEventListener("blur", refocusEditor);
+textArea.addEventListener("keydown", (event) => {
+    if (event.key != "Tab") return;
+    event.preventDefault();
+    insertTab();
+});
