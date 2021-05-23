@@ -32,10 +32,27 @@
       <input placeholder="Busque por algo" type="text" name="" class="h_search_bar field">
     </div>
     <div class="h_user">
-      <i class="fas fa-bars h_user_icon" aria-label="menu"></i>
+      <i class="fas fa-bars h_user_icon" aria-label="menu" data-button-side-menu>
+      </i>
       <img class="h_user_pic" src="./assets/images/bit.png" alt="foto do usuario">
       <span class="h_user_name">ninho</span>
     </div>
+    <section class="h_side-menu" data-side-menu>
+      <nav class="h_side-menu_nav">
+        <li class="h_side-menu_nav_item active">
+          <a href="" class="h_side-menu_nav_item_a">
+            <i class="fas fa-code h_side-menu_nav_item_a_icon"></i>
+            <p class="h_side-menu_nav_item_a_text">Editor de código</p>
+          </a>
+        </li>
+        <li class="h_side-menu_nav_item">
+          <a href="" class="h_side-menu_nav_item_a">
+            <i class="fas fa-users h_side-menu_nav_item_a_icon"></i>
+            <p class="h_side-menu_nav_item_a_text">Comunidade</p>
+          </a>
+        </li>
+      </nav>
+    </section>
   </header>
 
   <main class="m">
@@ -43,9 +60,9 @@
       <h3 class="m_menu_title mono">menu</h3>
       <nav class="m_menu_nav">
 
-        <li class="m_menu_nav_item">
+        <li class="m_menu_nav_item active">
           <a href="" class="m_menu_nav_item_a">
-            <i class="fas fa-code m_menu_nav_item_a_icon active"></i>
+            <i class="fas fa-code m_menu_nav_item_a_icon"></i>
             <p class="m_menu_nav_item_a_text">Editor de código</p>
           </a>
         </li>

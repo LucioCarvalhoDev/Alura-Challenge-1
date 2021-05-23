@@ -1,14 +1,16 @@
 /* 051D3B */
 .h {
-    height: 75px;
-    display: flex;
+    height: 4rem;
+    display: grid;
+    grid-template-areas: "logo search userORnav";
+    grid-template-columns: 20% 60% 20%;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 
-.h_logo, .h_user {
-    width: 20%;
+.h_logo {
+    grid-area: logo;
 }
 
 .h_logo_alura-dev {
@@ -16,7 +18,9 @@
 }
 
 .h_search {
+    grid-area: search;
     display: flex;
+    width: 100%;
     justify-content: flex-end;
     align-items: center;
 }
@@ -31,17 +35,18 @@
     display: none;
 }
 
-.h_user {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
-}
-
 /* mobile */    
 .h_user_icon {
     display: none;
     font-size: 1.7rem;
+}
+
+.h_user {
+    grid-area: userORnav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 
 .h_user_pic {
@@ -55,14 +60,52 @@
     color: #fdfdfd;
 }
 
+.h_side-menu {
+    grid-area: userORnav;
+    background-color: #2D415B;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    width: 25%;
+    height: calc(100vh - 4rem);
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+}
+
+.h_side-menu_nav_item {
+    list-style: none;
+    margin-bottom: 15px;
+    filter: brightness(0.5);
+}
+
+.h_side-menu_nav_item_a {
+    color: white;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    height: 3rem;
+}
+
+.h_side-menu_nav_item_a_icon {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 35%;
+    background-color: var(--secundary-color);
+}
+
+.h_side-menu_nav_item_a_text {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 1000px) {
 
-    .h_user {
-        width: 10%;
-    }
-
-    .h_search {
-        width: 70%;
+    .h {
+        grid-template-columns: 20% 70% 10%;
     }
 
     .h_user_pic, .h_user_name {

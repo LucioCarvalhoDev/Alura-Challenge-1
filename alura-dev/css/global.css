@@ -23,6 +23,15 @@ body {
 
 /* special classes */
 
+.active {
+    filter: brightness(1) !important;
+    /* color: #fdfdfd6b !important; */
+}
+
+.hidden {
+    display: none;
+}
+
 .mono {
     font-family: 'Roboto Mono', monospace;
     font-weight: 200;
