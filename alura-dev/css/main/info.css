@@ -9,7 +9,7 @@
 
 .m_info_project_legend, .m_info_personalization_legend {
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .m_info_project_name {
@@ -22,6 +22,7 @@
 .m_info_project_description {
     font: inherit;
     resize: none;
+    padding: 5px 10px;
 }
 
 .m_info_personalization_langs {
@@ -73,4 +74,34 @@
 .m_info_save:active {
     border: 4px solid var(--tertiary-color);
     background-color: var(--secundary-color);
+}
+
+@media screen and (max-width: 1000px) {
+    .m_info {
+        margin-left: 0px;
+    }
+
+    .m_info_project_description {
+        height: 4rem;
+        padding-top: 20px;
+    }
+
+    .m_info_personalization {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .m_info_personalization_langs {
+        width: 49%;
+    }
+
+    .m_info_personalization_color-container {
+        width: 49%;
+    }
+
+    .m_info_save {
+        margin-bottom: 35px;
+    }
 }

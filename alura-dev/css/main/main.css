@@ -19,9 +19,13 @@
     margin-left: 25px;
 }
 
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .m {
         display: flex;
         flex-direction: column;
     }
-} */
+
+    .m_menu {
+        display: none;
+    }
+}
