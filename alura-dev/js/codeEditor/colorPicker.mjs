@@ -7,7 +7,7 @@ let i = -1;
 
 button.addEventListener("click", switchColors)
 
-function switchColors(event={preventDefault: ()=>{}}) {
+export function switchColors(event={preventDefault: ()=>{}}) {
     event.preventDefault();
 
     button.classList.remove(colorClasses[i]);
