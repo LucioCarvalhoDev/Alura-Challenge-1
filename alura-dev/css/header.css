@@ -36,11 +36,6 @@
 }
 
 /* mobile */    
-.h_user_icon {
-    display: none;
-    font-size: 1.7rem;
-    cursor: pointer;
-}
 
 .h_user {
     grid-area: userORnav;
@@ -48,6 +43,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .h_user_pic {
@@ -102,7 +98,7 @@
 }
 
 .h_side-menu_nav_item_a_icon {
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 3rem;
@@ -115,6 +111,25 @@
     margin-left: 10px;
     display: flex;
     align-items: center;
+}
+
+.h_side-menu_nav_user {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.h_side-menu_nav_user_pic {
+    background: url("./../assets/images/no-picture.png") #fdfdfd;
+    width: 35px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.h_side-menu_nav_user_name {
+    color: #fdfdfd;
 }
 
 @media screen and (max-width: 1000px) {

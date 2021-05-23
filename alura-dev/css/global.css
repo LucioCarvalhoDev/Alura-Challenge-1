@@ -21,6 +21,11 @@ body {
     color: #fdfdfd; 
 }
 
+hr {
+    margin: 15px 0;
+    border: 1px solid #fdfdfd70;
+}
+
 /* special classes */
 
 .active {
@@ -72,8 +77,8 @@ body {
     background-color: #fdfdfda0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 400px) {
     body {
-        margin: 0 25px;
+        margin: 0 5px;
     }
 }

@@ -86,9 +86,16 @@
 @media screen and (max-width: 1000px) {
     .m_code_editor {
         margin-bottom: 25px;
+        padding: 30px 15px;
     }
 
     .m_code_highlights {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .m_code_editor {
+        padding: 30px 5px;
     }
 }

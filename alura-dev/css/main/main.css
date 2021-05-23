@@ -11,7 +11,7 @@
 }
 
 .m_code {
-    grid-area: code
+    grid-area: code;
 }
 
 .m_info {
