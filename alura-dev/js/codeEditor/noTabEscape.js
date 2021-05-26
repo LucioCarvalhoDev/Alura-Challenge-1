@@ -1,4 +1,6 @@
-const textArea = document.getElementById("editor-text");
+
+(() => {
+    const textArea = document.getElementById("editor-text");
 let lastKeyPressed;
 
 const tabStr = "  ";
@@ -23,3 +25,4 @@ textArea.addEventListener("keydown", (event) => {
     event.preventDefault();
     insertTab();
 });
+})()

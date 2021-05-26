@@ -4,12 +4,6 @@
     grid-template-columns: 20% 60% 20%;
 }
 
-.m_menu {
-    grid-area: menu;
-    margin-right: 25px;
-    font-size: .9rem;
-}
-
 .m_code {
     grid-area: code;
 }
@@ -23,9 +17,5 @@
     .m {
         display: flex;
         flex-direction: column;
-    }
-
-    .m_menu {
-        display: none;
     }
 }

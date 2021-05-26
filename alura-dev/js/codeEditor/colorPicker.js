@@ -1,4 +1,6 @@
-const button = document.querySelector("[data-color-picker]");
+
+(() => {
+    const button = document.querySelector("[data-color-picker]");
 const codeEditor = document.querySelector(".m_code_editor");
 
 const colorClasses = ["red", "blue", "green", "white"];
@@ -7,7 +9,7 @@ let i = -1;
 
 button.addEventListener("click", switchColors)
 
-export function switchColors(event={preventDefault: ()=>{}}) {
+function switchColors(event={preventDefault: ()=>{}}) {
     event.preventDefault();
 
     button.classList.remove(colorClasses[i]);
@@ -18,3 +20,4 @@ export function switchColors(event={preventDefault: ()=>{}}) {
 }
 
 switchColors();
+})()

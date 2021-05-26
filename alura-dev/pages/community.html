@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura Dev</title>
+  <script src="https://kit.fontawesome.com/adde5ca284.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/community/main.css">
+  <link rel="stylesheet" href="../css/community/codes.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="h">
+    <div class="h_logo">
+      <img class="h_logo_alura-dev" src="../assets/images/logo.png">
+    </div>
+    <div class="h_search">
+      <i class="fas fa-search h_search_icon" aria-label="pesquisar"></i>
+      <input placeholder="Busque por algo" type="text" name="" class="h_search_bar field">
+    </div>
+    <div class="h_user">
+      <img class="h_user_pic" src="../assets/images/bit.png" alt="foto do usuario">
+      <span class="h_user_name">ninho</span>
+    </div>
+    <section class="h_side-menu">
+      <i class="fas fa-bars h_side-menu_icon" aria-label="menu" data-button-side-menu>
+      </i>
+      <nav class="h_side-menu_nav hidden" data-side-menu>
+        <li class="h_side-menu_nav_item active">
+          <a href="./../index.html" class="h_side-menu_nav_item_a">
+            <i class="fas fa-code h_side-menu_nav_item_a_icon"></i>
+            <p class="h_side-menu_nav_item_a_text">Editor de código</p>
+          </a>
+        </li>
+        <li class="h_side-menu_nav_item">
+          <a href="." class="h_side-menu_nav_item_a">
+            <i class="fas fa-users h_side-menu_nav_item_a_icon"></i>
+            <p class="h_side-menu_nav_item_a_text">Comunidade</p>
+          </a>
+        </li>
+        <li class="h_side-menu_nav_item">
+          <a href="" class="h_side-menu_nav_item_a">
+            <i class="fab fa-github h_side-menu_nav_item_a_icon"></i>
+            <p class="h_side-menu_nav_item_a_text">Dev</p>
+          </a>
+        </li>
+        <hr>
+        <li class="h_side-menu_nav_user">
+          <img class="h_side-menu_nav_user_pic" src="../assets/images/bit.png" alt="foto do usuario">
+          <span class="h_side-menu_nav_user_name">ninho</span>
+        </li>
+      </nav>
+    </section>
+  </header>
+
+  <main class="m">
+    <section class="m_menu">
+      <h3 class="m_menu_title mono">menu</h3>
+      <nav class="m_menu_nav">
+
+        <li class="m_menu_nav_item active">
+          <a href="./../index.html" class="m_menu_nav_item_a">
+            <i class="fas fa-code m_menu_nav_item_a_icon"></i>
+            <p class="m_menu_nav_item_a_text">Editor de código</p>
+          </a>
+        </li>
+
+        <li class="m_menu_nav_item">
+          <a href="#" class="m_menu_nav_item_a">
+            <i class="fas fa-users m_menu_nav_item_a_icon"></i>
+            <p class="m_menu_nav_item_a_text">Comunidade</p>
+          </a>
+        </li>
+
+        <li class="m_menu_nav_item">
+          <a href="https://github.com/LucioCarvalhoDev" class="m_menu_nav_item_a" target="_blank">
+            <i class="fab fa-github m_menu_nav_item_a_icon"></i>
+            <p class="m_menu_nav_item_a_text">Dev</p>
+          </a>
+        </li>
+
+      </nav>
+    </section>
+    <section class="m_codes">
+      <article class="m_codes_card">
+        <div class="m_codes_card_main">
+          <div class="m_codes_card_main_header">
+            <ul class="m_codes_card_main_header_dots">
+              <li class="m_codes_card_main_header_dots_dot"></li>
+              <li class="m_codes_card_main_header_dots_dot m_codes_card_main_header_dots_dot--yellow"></li>
+              <li class="m_codes_card_main_header_dots_dot m_codes_card_main_header_dots_dot--green"></li>
+            </ul>
+          </div>
+          <textarea disabled wrap="hard" class="m_codes_card_main_text" name="" cols="30"
+            rows="10">Sobre: https://github.com/LucioCarvalhoDev/alura-challenge-1</textarea>
+          <footer class="m_codes_card_main_footer">
+            <p class="m_codes_card_main_footer_counter">caracteres: <span id="char-counter"></span></p>
+            <span id="extension" class="m_codes_card_main_footer_lang"></span>
+          </footer>
+        </div>
+        <header class="m_codes_card_header">
+          <h3 class="m_codes_card_header_title">collatz generator</h3>
+          <p class="m_codes_card_header_description">ado ado ado</p>
+        </header>
+        <footer class="m_codes_card_footer">
+          <div class="m_codes_card_footer_feedback">
+            <div class="m_codes_card_footer_feedback_comment">
+              <i class="fas fa-comment"></i>
+              <span class="m_codes_card_footer_feedback_comment_count">9</span>
+            </div>
+            <div class="m_codes_card_footer_feedback_love">
+              <i class="fas fa-heart"></i>
+              <span class="m_codes_card_footer_feedback_love_count">1</span>
+            </div>
+          </div>
+          <div class="m_codes_card_footer_perfil">
+            <img src="../assets/images/bit.png" alt="" class="m_codes_card_footer_perfil_pic">
+            <span class="m_codes_card_footer_perfil_name">a</span>
+          </div>
+        </footer>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- <script type="module" src="./../js/index.mjs"></script> -->
+  <!-- <script src="../js/codeEditor/charCounter.js"></script> -->
+  <script src="./../js/sideMenu.js"></script>
+  <script>
+
+    Array.prototype.random = function() {
+      return this[Math.floor(Math.random() * this.length)]
+    }
+
+    const firstName = "joselia,josemar,jonas,jucledison,juremar,judas,janiporo,jiraildes,jovenal,jena,aluisiu,aline,acacio,amora,aurea,alberta,audemiro,ana,anacliea,analice,poliana,pedro,diacomo,lucimeire,joão,lucas, cristiana,helen,micaela,mariana,suzieane".split(',');
+
+    const lastName = "almeida,santos,lima,bastos,ferreira,madeiro,dantes,luca".split(',');
+
+    function generateName() {
+      return firstName.random() + " " + lastName.random();
+    }
+  </script>
+  <!-- <script src="../js/codeEditor/noTabEscape.js"></script> -->
+  <!-- <script src="../js/codeEditor/extensionDisplay.js"></script> -->
+  <!-- <script src="../js/codeEditor/colorPicker.js"></script> -->
+</body>
+
+</html>

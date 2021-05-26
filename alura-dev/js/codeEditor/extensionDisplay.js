@@ -1,3 +1,5 @@
+
+(() => {
 const extensionSpan = document.getElementById("extension");
 const selectExtension = document.getElementById("lang-selector");
 
@@ -7,4 +9,5 @@ function updateExtension() {
 
 selectExtension.addEventListener("change", updateExtension);
 
-updateExtension();
+updateExtension();    
+})()

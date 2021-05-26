@@ -1,0 +1,13 @@
+.m {
+    display: grid;
+    grid-template-areas: "menu codes";
+    grid-template-columns: 20% 1fr;
+    gap: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .m {
+        display: flex;
+        flex-direction: column;
+    }
+}

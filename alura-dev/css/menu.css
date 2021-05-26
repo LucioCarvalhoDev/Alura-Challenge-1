@@ -1,3 +1,11 @@
+
+
+.m_menu {
+    grid-area: menu;
+    margin-right: 25px;
+    font-size: .9rem;
+}
+
 .m_menu_title {
     margin-bottom: 15px;
 }
@@ -39,4 +47,10 @@
     margin-left: 10px;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .m_menu {
+        display: none;
+    }
 }
