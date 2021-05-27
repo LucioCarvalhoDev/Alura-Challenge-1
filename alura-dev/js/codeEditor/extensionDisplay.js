@@ -1,13 +1,27 @@
-
 (() => {
-const extensionSpan = document.getElementById("extension");
-const selectExtension = document.getElementById("lang-selector");
+    const extensionSpan = document.getElementById("extension");
+    const selectExtension = document.getElementById("lang-selector");
 
-function updateExtension() {
-    extensionSpan.textContent = "." + selectExtension.value;
-}
+    const codePreview = document.querySelector(".m_code_editor_code-preview ");
 
-selectExtension.addEventListener("change", updateExtension);
+    function changeClassCodePreview() {
+        const oldLang = (Array.from(codePreview.classList)).indexOf(("language-" + extensionSpan.textContent.substr(1)));
 
-updateExtension();    
-})()
+        const newLang = "language-" + selectExtension.value;
+
+        codePreview
+            .classList
+            .replace(codePreview.classList[oldLang], newLang);
+    }
+
+    function updateExtension() {
+        extensionSpan.textContent = "." + selectExtension.value;
+    }
+
+    selectExtension.addEventListener("change", () => {
+        changeClassCodePreview();
+        updateExtension();
+    });
+
+    updateExtension();
+})();

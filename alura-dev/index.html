@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alura Dev</title>
   <script src="https://kit.fontawesome.com/adde5ca284.js" crossorigin="anonymous"></script>
-<!-- home -->
+  <!-- home -->
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/menu.css">
@@ -21,6 +21,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200;400&display=swap"
     rel="stylesheet">
+
+  <link rel="stylesheet" href="./libs/styles/dracula.css">
 </head>
 
 <body>
@@ -89,7 +91,7 @@
         <li class="m_menu_nav_item">
           <a href="https://github.com/LucioCarvalhoDev" class="m_menu_nav_item_a" target="_blank">
             <i class="fab fa-github m_menu_nav_item_a_icon"></i>
-          <p class="m_menu_nav_item_a_text">Dev</p>
+            <p class="m_menu_nav_item_a_text">Dev</p>
           </a>
         </li>
 
@@ -104,8 +106,8 @@
             <li class="m_code_editor_header_dots_dot m_code_editor_header_dots_dot--green"></li>
           </ul>
         </div>
-        <textarea id="editor-text" wrap="soft" class="m_code_editor_text" name="" cols="30"
-          rows="10">Sobre: https://github.com/LucioCarvalhoDev/alura-challenge-1</textarea>
+        <textarea id="editor-text" wrap="soft" class="m_code_editor_text language-html" name="" rows="10"></textarea>
+        <code data-code-preview class="m_code_editor_code-preview language-js"></code>
         <div class="m_code_editor_footer">
           <p class="m_code_editor_footer_counter">caracteres: <span id="char-counter"></span></p>
           <span id="extension" class="m_code_editor_header_language"></span>
@@ -124,7 +126,6 @@
         <legend class="m_info_personalization_legend mono">Personalização</legend>
         <select name="langs" id="lang-selector" class="m_info_personalization_langs field">
           <option class="m_info_personalization_langs_lang" value="js">JavaScript</option>
-          <option class="m_info_personalization_langs_lang" value="py">Phyton</option>
           <option class="m_info_personalization_langs_lang" value="java">Java</option>
           <option class="m_info_personalization_langs_lang" value="c">C</option>
           <option class="m_info_personalization_langs_lang" value="cc">C++</option>
@@ -143,6 +144,7 @@
   <script src="./js/codeEditor/extensionDisplay.js"></script>
   <script src="./js/codeEditor/colorPicker.js"></script>
   <script src="./js/sideMenu.js"></script>
+  <script src="./js/codeEditor/highlight.js"></script>
 </body>
 
 </html>

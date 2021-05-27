@@ -49,16 +49,23 @@
     color: rgba(212, 184, 113, 0.568)
 }
 
-.m_code_editor_text {
+/* !important usado para sobreescrever efeito de lib */
+.m_code_editor_text, .m_code_editor_code-preview {
     width: 100%;
-    background-color: #141414;
+    height: 20rem;
+    background-color: #141414 !important;
     border:none;
     outline: none;
-    padding: 5px 15px;
+    padding: 5px 15px !important;
     border-radius: none;
     resize: none;
     font-size: 1.5rem;
     color: #fdfdfd;
+    overflow: hidden;
+}
+
+.m_code_editor_code-preview {
+    display: none;
 }
 
 .m_code_editor_footer {
