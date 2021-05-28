@@ -118,8 +118,8 @@
     <form class="m_info">
       <fieldset class="m_info_project">
         <legend class="m_info_project_legend mono">Meu projeto</legend>
-        <input type="text" class="m_info_project_name field" placeholder="Nome do seu projeto">
-        <textarea placeholder="Descrição do seu projeto" name="" id="" rows="10"
+        <input id="ipt-name" type="text" class="m_info_project_name field" placeholder="Nome do seu projeto">
+        <textarea id="ipt-description" placeholder="Descrição do seu projeto" name="" id="" rows="10"
           class="m_info_project_description field"></textarea>
       </fieldset>
       <fieldset class="m_info_personalization">
@@ -133,10 +133,11 @@
           <option class="m_info_personalization_langs_lang" value="cs">C#</option>
         </select>
         <div class="m_info_personalization_color-container">
-          <button class="m_info_personalization_color-container_picker red" data-color-picker></button>
+          <button id="color-picker" class="m_info_personalization_color-container_picker red"
+            data-color-picker></button>
         </div>
       </fieldset>
-      <button class="m_info_save">Salvar projeto</button>
+      <button id="save" class="m_info_save">Salvar projeto</button>
     </form>
   </main>
 
@@ -146,6 +147,7 @@
   <script src="./js/codeEditor/colorPicker.js"></script>
   <script src="./js/sideMenu.js"></script>
   <script src="./js/codeEditor/highlight.js"></script>
+  <script src="./js/dao/save.js"></script>
 </body>
 
 </html>
