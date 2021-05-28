@@ -43,14 +43,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;;
+}
+
+.m_info_personalization_color-container_bg {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: red;
+    position: absolute;
+    border-radius: 5px;
+
 }
 
 .m_info_personalization_color-container_picker {
     width: calc(100% - 10px);
     height: calc(100% - 10px);
-    border-radius: 5px;
-    border:none;
     cursor: pointer;
+    outline: none;
+    opacity: 0;
 }
 
 .m_info_save {
