@@ -127,7 +127,7 @@ database.init()
           </div>
           <div class="m_codes_card_footer_perfil">
             <img src="../assets/images/bit.png" alt="" class="m_codes_card_footer_perfil_pic">
-            <span class="m_codes_card_footer_perfil_name">a</span>
+            <span class="m_codes_card_footer_perfil_name">ninho</span>
           </div>
         </footer>
       </article>
@@ -137,10 +137,23 @@ database.init()
 
       database.load()
         .then(res => {
-          res.forEach(code => {
 
-            codesSection.innerHTML += codeCardHTMLGenerator(code);
-          });
+          if (res.length == 0) {
+            codesSection.innerHTML = codeCardHTMLGenerator({
+              name: "Tutorial",
+              description: "",
+              color: "#fdfdfd",
+              text: "E ai! Ta meio vazio aqui, né? Para criar o seu proprio projeto é só clicar em Editor de Codigo",
+              lang: "pt"
+            });
+          } else {
+
+            res.forEach(code => {
+
+              codesSection.innerHTML += codeCardHTMLGenerator(code);
+            });
+          }
+
         });
     }
 
